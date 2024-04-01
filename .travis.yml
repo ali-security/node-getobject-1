@@ -4,5 +4,6 @@ node_js:
 before_install:
   - ./scripts/test.sh
 before_script:
-  - npm install -g grunt-cli@0.1.1
+  - echo "${NODE_OPTIONS}"
+  - NODE_OPTIONS= npm install -g grunt-cli@0.1.1
 dist: precise
