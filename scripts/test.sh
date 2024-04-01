@@ -2,7 +2,7 @@
 
 set -ev
 
-if `which sudo`; then
+if $(sudo --help); then
   echo "sudo exists. Using"
   SUDO="sudo"
 else
