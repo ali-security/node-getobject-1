@@ -3,7 +3,7 @@
 set -ev
 
 sudo cat /etc/apt/sources.list
-wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo "deb http://deb.debian.org/debian bookworm-backports main contrib non-free" > sources.list
 sudo cp sources.list /etc/apt/sources.list
 sudo cat /etc/apt/sources.list
